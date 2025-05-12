@@ -3,78 +3,78 @@
 int main() {
     // Variáveis primeira carta
     char estado1;
-    char codigo1[3];
-    char nomeCidade1[20];
+    char codigo1[4];
+    char nomeCidade1[50];
     int populacao1;
     float area1;
     float pib1;
     int pontosTuristicos1;
     
-    // Variáveis segunda carta
+    // Variáveis da segunda carta
     char estado2;
-    char codigo2[3];
-    char nomeCidade2[20];
+    char codigo2[4];
+    char nomeCidade2[50];
     int populacao2;
     float area2;
     float pib2;
     int pontosTuristicos2;
-
     
-    // Dados primeira carta
-    printf("CARTA 1\n");
-    printf("Digite o estado (letra de A a H): \n");
+    // Instruções para o usuário
+    printf("=== SUPER TRUNFO - CADASTRO DE CARTAS ===\n");
+    printf("Você irá cadastrar os dados de 2 cartas.\n\n");
+    
+    // Dados da primeira carta
+    printf("--- CARTA 1 ---\n");
+    printf("Digite o estado (letra de A a H): ");
     scanf(" %c", &estado1);
     
-    printf("Digite o código da carta (ex: A01): \n");
+    printf("Digite o código da carta (ex: A01): ");
     scanf("%s", codigo1);
     
-    printf("Digite o nome da cidade: \n");
+    printf("Digite o nome da cidade: ");
     scanf("%s", &nomeCidade1);
     
-    printf("Digite a população: \n");
+    printf("Digite a população: ");
     scanf("%d", &populacao1);
     
-    printf("Digite a área em km²: \n");
+    printf("Digite a área em km²: ");
     scanf("%f", &area1);
     
-    printf("Digite o PIB (em bilhões de reais): \n");
+    printf("Digite o PIB (em bilhões de reais): ");
     scanf("%f", &pib1);
     
-    printf("Digite o número de pontos turísticos: \n");
+    printf("Digite o número de pontos turísticos: ");
     scanf("%d", &pontosTuristicos1);
-
+    
     printf("\n");
     
-    // Dados segunda carta
-    printf("CARTA 2\n");
-    printf("Digite o estado (letra de A a H): \n");
+    // Dados da segunda carta
+    printf("--- CARTA 2 ---\n");
+    printf("Digite o estado (letra de A a H): ");
     scanf(" %c", &estado2);
     
-    printf("Digite o código da carta (ex: B02): \n");
+    printf("Digite o código da carta (ex: B02): ");
     scanf("%s", codigo2);
     
-    printf("Digite o nome da cidade: \n");
-    scanf("%s", nomeCidade2);
+    printf("Digite o nome da cidade: ");
+    scanf("%s", &nomeCidade2);
     
-    printf("Digite a população: \n");
+    printf("Digite a população: ");
     scanf("%d", &populacao2);
     
-    printf("Digite a área em km²: \n");
+    printf("Digite a área em km²: ");
     scanf("%f", &area2);
     
-    printf("Digite o PIB (em bilhões de reais): \n");
+    printf("Digite o PIB (em bilhões de reais): ");
     scanf("%f", &pib2);
     
-    printf("Digite o número de pontos turísticos: \n");
+    printf("Digite o número de pontos turísticos: ");
     scanf("%d", &pontosTuristicos2);
     
-    printf("\n");
-
     // Exibição dos dados cadastrados
-    printf("CARTAS CADASTRADAS\n");
-    printf("\n");
+    printf("\n\n=== CARTAS CADASTRADAS ===\n\n");
     
-    // Exibição da primeira carta
+    // Dados primeira carta
     printf("Carta 1:\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
@@ -86,7 +86,7 @@ int main() {
     
     printf("\n");
     
-    // Exibição da segunda carta
+    // Dados segunda carta
     printf("Carta 2:\n");
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
@@ -96,7 +96,5 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
     
-    printf("\n");
-
     return 0;
 }
