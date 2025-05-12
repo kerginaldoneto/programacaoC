@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    // Variáveis primeira carta
+    // Variáveis para armazenar os dados da primeira carta
     char estado1;
     char codigo1[4];
     char nomeCidade1[50];
@@ -10,7 +10,7 @@ int main() {
     float pib1;
     int pontosTuristicos1;
     
-    // Variáveis da segunda carta
+    // Variáveis para armazenar os dados da segunda carta
     char estado2;
     char codigo2[4];
     char nomeCidade2[50];
@@ -23,7 +23,7 @@ int main() {
     printf("=== SUPER TRUNFO - CADASTRO DE CARTAS ===\n");
     printf("Você irá cadastrar os dados de 2 cartas.\n\n");
     
-    // Dados da primeira carta
+    // Leitura dos dados da primeira carta
     printf("--- CARTA 1 ---\n");
     printf("Digite o estado (letra de A a H): ");
     scanf(" %c", &estado1);
@@ -32,7 +32,7 @@ int main() {
     scanf("%s", codigo1);
     
     printf("Digite o nome da cidade: ");
-    scanf("%s", &nomeCidade1);
+    scanf(" %[^\n]", nomeCidade1);
     
     printf("Digite a população: ");
     scanf("%d", &populacao1);
@@ -48,7 +48,7 @@ int main() {
     
     printf("\n");
     
-    // Dados da segunda carta
+    // Leitura dos dados da segunda carta
     printf("--- CARTA 2 ---\n");
     printf("Digite o estado (letra de A a H): ");
     scanf(" %c", &estado2);
@@ -57,7 +57,7 @@ int main() {
     scanf("%s", codigo2);
     
     printf("Digite o nome da cidade: ");
-    scanf("%s", &nomeCidade2);
+    scanf(" %[^\n]", nomeCidade2);
     
     printf("Digite a população: ");
     scanf("%d", &populacao2);
@@ -74,7 +74,7 @@ int main() {
     // Exibição dos dados cadastrados
     printf("\n\n=== CARTAS CADASTRADAS ===\n\n");
     
-    // Dados primeira carta
+    // Exibição da primeira carta
     printf("Carta 1:\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
@@ -86,7 +86,7 @@ int main() {
     
     printf("\n");
     
-    // Dados segunda carta
+    // Exibição da segunda carta
     printf("Carta 2:\n");
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
