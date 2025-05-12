@@ -72,6 +72,7 @@ int main() {
 
     // Exibição dos dados cadastrados
     printf("CARTAS CADASTRADAS\n");
+    printf("\n");
     
     // Exibição da primeira carta
     printf("Carta 1:\n");
