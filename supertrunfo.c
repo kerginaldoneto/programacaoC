@@ -138,13 +138,13 @@ int main() {
     
     // Resultado das comparações
     printf("\n\n=== COMPARAÇÃO DE CARTAS ===\n\n");
-    printf("População: Carta %d venceu (%d)\n", vencedorPopulacao ? 1 : 2, vencedorPopulacao);
-    printf("Área: Carta %d venceu (%d)\n", vencedorArea ? 1 : 2, vencedorArea);
-    printf("PIB: Carta %d venceu (%d)\n", vencedorPIB ? 1 : 2, vencedorPIB);
-    printf("Pontos Turísticos: Carta %d venceu (%d)\n", vencedorPontosTuristicos ? 1 : 2, vencedorPontosTuristicos);
-    printf("Densidade Populacional: Carta %d venceu (%d)\n", vencedorDensidade ? 1 : 2, vencedorDensidade);
-    printf("PIB per Capita: Carta %d venceu (%d)\n", vencedorPIBPerCapita ? 1 : 2, vencedorPIBPerCapita);
-    printf("Super Poder: Carta %d venceu (%d)\n", vencedorSuperPoder ? 1 : 2, vencedorSuperPoder);
+    printf("População: Carta %d venceu (%d)\n", 2 - vencedorPopulacao, vencedorPopulacao);
+    printf("Área: Carta %d venceu (%d)\n", 2 - vencedorArea, vencedorArea);
+    printf("PIB: Carta %d venceu (%d)\n", 2 - vencedorPIB, vencedorPIB);
+    printf("Pontos Turísticos: Carta %d venceu (%d)\n", 2 - vencedorPontosTuristicos, vencedorPontosTuristicos);
+    printf("Densidade Populacional: Carta %d venceu (%d)\n", 2 - vencedorDensidade, vencedorDensidade);
+    printf("PIB per Capita: Carta %d venceu (%d)\n", 2 - vencedorPIBPerCapita, vencedorPIBPerCapita);
+    printf("Super Poder: Carta %d venceu (%d)\n", 2 - vencedorSuperPoder, vencedorSuperPoder);
     
     return 0;
 }
